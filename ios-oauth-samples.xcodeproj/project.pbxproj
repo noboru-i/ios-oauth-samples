@@ -10,11 +10,11 @@
 		3D091DBAFD2752F4D114EB16 /* Pods_ios_oauth_samples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A920AAA08ED688AEF8360E /* Pods_ios_oauth_samples.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		519BFBE11B3A4815005DE362 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 519BFBE01B3A4815005DE362 /* main.m */; };
 		519BFBE41B3A4815005DE362 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 519BFBE31B3A4815005DE362 /* AppDelegate.m */; };
-		519BFBE71B3A4815005DE362 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 519BFBE61B3A4815005DE362 /* ViewController.m */; };
-		519BFBEA1B3A4815005DE362 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 519BFBE81B3A4815005DE362 /* Main.storyboard */; };
 		519BFBEC1B3A4815005DE362 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 519BFBEB1B3A4815005DE362 /* Images.xcassets */; };
 		519BFBEF1B3A4815005DE362 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 519BFBED1B3A4815005DE362 /* LaunchScreen.xib */; };
 		519BFBFB1B3A4815005DE362 /* ios_oauth_samplesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 519BFBFA1B3A4815005DE362 /* ios_oauth_samplesTests.m */; };
+		519BFC0A1B3A54FA005DE362 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 519BFC081B3A54FA005DE362 /* MainViewController.m */; };
+		519BFC0B1B3A54FA005DE362 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 519BFC091B3A54FA005DE362 /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,14 +33,14 @@
 		519BFBE01B3A4815005DE362 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		519BFBE21B3A4815005DE362 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		519BFBE31B3A4815005DE362 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		519BFBE51B3A4815005DE362 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		519BFBE61B3A4815005DE362 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		519BFBE91B3A4815005DE362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		519BFBEB1B3A4815005DE362 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		519BFBEE1B3A4815005DE362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		519BFBF41B3A4815005DE362 /* ios-oauth-samplesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-oauth-samplesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		519BFBF91B3A4815005DE362 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		519BFBFA1B3A4815005DE362 /* ios_oauth_samplesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_oauth_samplesTests.m; sourceTree = "<group>"; };
+		519BFC071B3A54FA005DE362 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		519BFC081B3A54FA005DE362 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		519BFC091B3A54FA005DE362 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		6D195CEBA162C10AA906BF83 /* Pods-ios-oauth-samples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-oauth-samples.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-oauth-samples/Pods-ios-oauth-samples.debug.xcconfig"; sourceTree = "<group>"; };
 		80F52FB3028BA7D45B8E2A62 /* Pods-ios-oauth-samples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-oauth-samples.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-oauth-samples/Pods-ios-oauth-samples.release.xcconfig"; sourceTree = "<group>"; };
 		91A920AAA08ED688AEF8360E /* Pods_ios_oauth_samples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_oauth_samples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,11 +88,7 @@
 		519BFBDD1B3A4815005DE362 /* ios-oauth-samples */ = {
 			isa = PBXGroup;
 			children = (
-				519BFBE21B3A4815005DE362 /* AppDelegate.h */,
-				519BFBE31B3A4815005DE362 /* AppDelegate.m */,
-				519BFBE51B3A4815005DE362 /* ViewController.h */,
-				519BFBE61B3A4815005DE362 /* ViewController.m */,
-				519BFBE81B3A4815005DE362 /* Main.storyboard */,
+				519BFC041B3A4CCB005DE362 /* Classes */,
 				519BFBEB1B3A4815005DE362 /* Images.xcassets */,
 				519BFBED1B3A4815005DE362 /* LaunchScreen.xib */,
 				519BFBDE1B3A4815005DE362 /* Supporting Files */,
@@ -124,6 +120,18 @@
 				519BFBF91B3A4815005DE362 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		519BFC041B3A4CCB005DE362 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				519BFBE21B3A4815005DE362 /* AppDelegate.h */,
+				519BFBE31B3A4815005DE362 /* AppDelegate.m */,
+				519BFC071B3A54FA005DE362 /* MainViewController.h */,
+				519BFC081B3A54FA005DE362 /* MainViewController.m */,
+				519BFC091B3A54FA005DE362 /* MainViewController.xib */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		B55ACFA4CB1149425880C186 /* Pods */ = {
@@ -226,8 +234,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				519BFBEA1B3A4815005DE362 /* Main.storyboard in Resources */,
 				519BFBEF1B3A4815005DE362 /* LaunchScreen.xib in Resources */,
+				519BFC0B1B3A54FA005DE362 /* MainViewController.xib in Resources */,
 				519BFBEC1B3A4815005DE362 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,8 +302,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				519BFBE71B3A4815005DE362 /* ViewController.m in Sources */,
 				519BFBE41B3A4815005DE362 /* AppDelegate.m in Sources */,
+				519BFC0A1B3A54FA005DE362 /* MainViewController.m in Sources */,
 				519BFBE11B3A4815005DE362 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,14 +327,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		519BFBE81B3A4815005DE362 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				519BFBE91B3A4815005DE362 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		519BFBED1B3A4815005DE362 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
