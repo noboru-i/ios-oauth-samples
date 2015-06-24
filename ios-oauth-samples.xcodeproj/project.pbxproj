@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D091DBAFD2752F4D114EB16 /* Pods_ios_oauth_samples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A920AAA08ED688AEF8360E /* Pods_ios_oauth_samples.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		519BFBE11B3A4815005DE362 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 519BFBE01B3A4815005DE362 /* main.m */; };
 		519BFBE41B3A4815005DE362 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 519BFBE31B3A4815005DE362 /* AppDelegate.m */; };
 		519BFBE71B3A4815005DE362 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 519BFBE61B3A4815005DE362 /* ViewController.m */; };
@@ -40,6 +41,9 @@
 		519BFBF41B3A4815005DE362 /* ios-oauth-samplesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-oauth-samplesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		519BFBF91B3A4815005DE362 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		519BFBFA1B3A4815005DE362 /* ios_oauth_samplesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_oauth_samplesTests.m; sourceTree = "<group>"; };
+		6D195CEBA162C10AA906BF83 /* Pods-ios-oauth-samples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-oauth-samples.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-oauth-samples/Pods-ios-oauth-samples.debug.xcconfig"; sourceTree = "<group>"; };
+		80F52FB3028BA7D45B8E2A62 /* Pods-ios-oauth-samples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-oauth-samples.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-oauth-samples/Pods-ios-oauth-samples.release.xcconfig"; sourceTree = "<group>"; };
+		91A920AAA08ED688AEF8360E /* Pods_ios_oauth_samples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_oauth_samples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D091DBAFD2752F4D114EB16 /* Pods_ios_oauth_samples.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +71,8 @@
 				519BFBDD1B3A4815005DE362 /* ios-oauth-samples */,
 				519BFBF71B3A4815005DE362 /* ios-oauth-samplesTests */,
 				519BFBDC1B3A4815005DE362 /* Products */,
+				B55ACFA4CB1149425880C186 /* Pods */,
+				B564ECFD60F3E2B323584226 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +126,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B55ACFA4CB1149425880C186 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D195CEBA162C10AA906BF83 /* Pods-ios-oauth-samples.debug.xcconfig */,
+				80F52FB3028BA7D45B8E2A62 /* Pods-ios-oauth-samples.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B564ECFD60F3E2B323584226 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91A920AAA08ED688AEF8360E /* Pods_ios_oauth_samples.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +150,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 519BFBFE1B3A4815005DE362 /* Build configuration list for PBXNativeTarget "ios-oauth-samples" */;
 			buildPhases = (
+				3D12389E5AFA8A2AD473940D /* Check Pods Manifest.lock */,
 				519BFBD71B3A4815005DE362 /* Sources */,
 				519BFBD81B3A4815005DE362 /* Frameworks */,
 				519BFBD91B3A4815005DE362 /* Resources */,
+				4DC19533F886C088B7941149 /* Embed Pods Frameworks */,
+				4252EBF37808496AD6ED003D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +240,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D12389E5AFA8A2AD473940D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4252EBF37808496AD6ED003D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-oauth-samples/Pods-ios-oauth-samples-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DC19533F886C088B7941149 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-oauth-samples/Pods-ios-oauth-samples-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		519BFBD71B3A4815005DE362 /* Sources */ = {
@@ -347,6 +422,7 @@
 		};
 		519BFBFF1B3A4815005DE362 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D195CEBA162C10AA906BF83 /* Pods-ios-oauth-samples.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "ios-oauth-samples/Info.plist";
@@ -357,6 +433,7 @@
 		};
 		519BFC001B3A4815005DE362 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80F52FB3028BA7D45B8E2A62 /* Pods-ios-oauth-samples.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "ios-oauth-samples/Info.plist";
@@ -418,6 +495,7 @@
 				519BFC001B3A4815005DE362 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		519BFC011B3A4815005DE362 /* Build configuration list for PBXNativeTarget "ios-oauth-samplesTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +504,7 @@
 				519BFC031B3A4815005DE362 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
